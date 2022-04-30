@@ -10,11 +10,6 @@ public class Main {
         return str2;
     }
 
-    public static long uniqueCharactersCounter (String str) {
-        return str.chars().distinct().count();
-    }
-
-
     public static void letterCounter (String str) {
         String str2 = toLowerCaseAndRemoval(str);
         char[] charArray = str2.toCharArray();
