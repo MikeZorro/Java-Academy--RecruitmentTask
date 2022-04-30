@@ -15,8 +15,17 @@ public class Main {
         String str2 = toLowerCase(str);
         char[] charArray = str2.toCharArray();
         int counter = 0;
-
+        for (int i = 0; i < charArray.length; i++) {
+            for (int j = 0; j < charArray.length; j++) {
+                if (charArray[i] == charArray[j]) {
+                    counter++;
+                }
+            }
+            String result = ("" + charArray[i] + counter);
+            System.out.println(result);
+            counter = 0;
         }
+    }
 
 
             public static void main (String[]args){
